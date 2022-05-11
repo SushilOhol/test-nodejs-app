@@ -6,7 +6,7 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           sh 'npm install' 
+           echo "THIS IS NEW FEATURE BRANCH" 
         }
      }
      
@@ -20,6 +20,7 @@ pipeline {
          steps { 
            sh 'echo "deploying application..."'
          }
+	
 
      }
   
